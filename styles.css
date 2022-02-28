@@ -1,22 +1,32 @@
-
-
 * {
   margin: 0;
 }
 
 body::-webkit-scrollbar {
-  display: none;
+  width: 8px;
 }
+
+body::-webkit-scrollbar-track {
+  background-color: rgb(182, 187, 154);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(55, 77, 177);
+  border-radius: 4px;
+}
+
 .navbar {
   background-color: rgb(32, 31, 31);
   border-bottom: solid 10px rgb(87, 83, 83, 0.3);
+  display: flex;
+  justify-content: space-between;
 }
 
-.navbar ul {
+.normalmenu {
   overflow: auto;
 }
 
-.navbar li {
+.normalmenu li {
   float: left;
   list-style: none;
   margin: 23px 10px;
@@ -37,24 +47,58 @@ a:hover {
   padding: 3px;
 }
 
+/* hamburger menu */
+@media (min-width: 700px) {
+  .navbar i {
+    display: none;
+  }
+}
+
+@media (max-width: 699px) {
+  .normalmenu li {
+    display: none;
+  }
+
+  .navbar i {
+    display: block;
+    color: white;
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    cursor: pointer;
+  }
+  .hamburgermenu {
+    display: flex;
+    flex-direction: column;
+    margin: 65px auto 15px auto;
+    list-style: none;
+    gap: 1.2rem;
+  }
+  .hamburgermenu li a {
+    text-decoration: none;
+    color: blanchedalmond;
+    font-family: "Outfit", sans-serif;
+    font-size: 30px;
+  }
+}
+
+
 .hero {
   margin: 0;
   height: 90vh;
-  background-image: linear-gradient(
-    to right top,
-    #051937,
-    #004d7a
-  );
+  background-image: linear-gradient(to right top, #051937, #004d7a);
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
   border-bottom: 20px solid rgba(255, 255, 255, 0.315);
 }
 
 .myname {
   padding: 10px;
   border: 6px solid whitesmoke;
-  height: fit-content;
-  margin: 0 10px;
+
+  margin: auto 12px;
   font-family: "Outfit", sans-serif;
   font-size: 50px;
   text-transform: uppercase;
@@ -62,13 +106,28 @@ a:hover {
   color: rgba(255, 255, 255, 0.699);
   filter: drop-shadow(0 0 0.25rem rgb(113, 156, 192));
   letter-spacing: 2px;
-  position: relative;
-  top: 18rem;
   cursor: default;
 }
 
+.quote {
+  position: relative;
+  bottom: 200px;
+  color: rgba(240, 248, 255, 0.74);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-style: italic;
+  word-spacing: 6px;
+  letter-spacing: 3px;
+}
+
+@media (max-width: 376px) {
+  .quote {
+    position: relative;
+    bottom: 150px;
+  }
+}
 .port {
-  float: right;
+  justify-self: flex-end;
   margin: 1rem 2rem;
   color: blanchedalmond;
   font-family: "Roboto", sans-serif;
@@ -77,22 +136,18 @@ a:hover {
 
 .ABOUT {
   margin: 0;
-  height: auto;
-  background-image: linear-gradient(
-    to right bottom,
-    #051937,
-    #004d7a
-  );
+  padding: 30px;
+  background-image: linear-gradient(to right bottom, #051937, #004d7a);
   border-bottom: 20px solid rgba(255, 255, 255, 0.315);
 }
 
 .ABOUT h3 {
   font-family: "Outfit", sans-serif;
-  margin-bottom: 50px;
+  margin-bottom: 70px;
   font-size: 50px;
   text-transform: uppercase;
   text-align: center;
-  padding-top: 7rem;
+  padding-top: 3rem;
   color: rgba(255, 255, 255, 0.8);
   filter: drop-shadow(0 0 0.25rem rgb(201, 226, 57));
   cursor: default;
@@ -123,17 +178,14 @@ a:hover {
   padding: 30px;
   font-family: "JetBrains Mono", monospace;
   text-align: center;
+  line-height: 25px;
 }
 
 .skills {
   margin: 0;
   height: auto;
-  background-image: linear-gradient(
-    to right top,
-    #051937,
-    #004d7a
-  );
-
+  background-image: linear-gradient(to right top, #051937, #004d7a);
+  border-bottom: 20px solid rgba(255, 255, 255, 0.315);
 }
 
 .skills h3 {
@@ -147,37 +199,101 @@ a:hover {
   cursor: default;
 }
 
-.skillsbox{
+.skillsbox {
   margin: 100px 2px 0;
-  padding:0 100px 300px 100px ;
+  padding: 0 100px 300px 100px;
   display: flex;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
   justify-content: space-between;
-
+  align-items: center;
 }
 
-.skillsbox img{
+.skillsbox img {
   -webkit-filter: drop-shadow(0 0 0.25rem rgb(201, 226, 57));
   width: 9rem;
 }
 
-.skilltype{
+.skilltype {
   display: flex;
   flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
+  margin: auto;
+}
 
-}  
-
-.skilltype:hover{
+.skilltype:hover {
   background-color: rgba(115, 179, 236, 0.021);
   border-radius: 15px;
 }
 
-.skilltext{
-  color: aliceblue;
-  font-family: "Outfit", sans-serif;
+.skilltext {
+  color: rgba(240, 248, 255, 0.808);
+  font-family: "JetBrains Mono", monospace;
   position: relative;
   bottom: 4px;
 }
 
+.socials {
+  margin: 0;
+  height: auto;
+  background-image: linear-gradient(to right bottom, #051937, #004d7a);
+}
+
+.socials h3 {
+  font-family: "Outfit", sans-serif;
+  font-size: 50px;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 7rem;
+  color: rgba(255, 255, 255, 0.8);
+  filter: drop-shadow(0 0 0.25rem rgb(201, 226, 57));
+  cursor: default;
+}
+
+.socialsbox {
+  margin: 100px 2px 0;
+  padding: 0 100px 300px 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3.2rem;
+  flex-direction: column;
+}
+
+.socialtype {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 80px;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.skilltext1 {
+  color: rgba(240, 248, 255, 0.781);
+  font-family: "JetBrains Mono", monospace;
+  position: relative;
+  bottom: 4px;
+  text-decoration: none;
+}
+
+.socialtype img {
+  -webkit-filter: drop-shadow(0 0 0.25rem rgb(201, 226, 57));
+  width: 9rem;
+}
+
+footer{
+  background-color: rgb(32, 31, 31);
+  padding: 20px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer div{
+  color: aliceblue;
+  font-family: "Outfit", sans-serif;
+  font-size: 20px;
+}

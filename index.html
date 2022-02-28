@@ -20,38 +20,43 @@
         href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Montserrat:wght@200&family=Oswald:wght@200&family=Roboto:wght@400;500&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/99ba3fdd15.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
         <nav class="navbar">
-            <ul>
+            <i class="fa-solid fa-bars" id="hmenu"></i>          
+            <ul class="normalmenu" id="nmenu">
                 <li><a href="#aboutme">About Me</a></li>
                 <li><a href="#skillsme">Skills</a></li>
-                <li><a href="#">Social</a></li>
-                <div class="port">
-                    Portfolio
-                </div>
+                <li><a href="#socialsme">Social</a></li>
             </ul>
 
+            <div class="port">
+                Portfolio
+            </div>
+
+            
         </nav>
 
         <div class="hero" id="name">
             <h2 class="myname">Gautham Krishhna</h2>
-
+            <div class="quote">"Destiny got big plans for you"</div>
         </div>
-
     </header>
+
     <main>
         <div class='ABOUT' id="aboutme">
             <h3>About Me</h3>
             <div class="aboutbox">
                 <div>Hello. Name's in the top section as you all have noticed. I am a first year undergrad studying at
                     VIT University. I love to code and I'm super passionate about web design and development.
-                    Currently learning the front-end part of the Web-Dev. Also looking forward to learn front-end frameworks like React JS and others. <br>
+                    Currently learning the front-end part of the Web-Dev. Also looking forward to learn front-end frameworks/libraries like React JS and others. <br>
                     I'm also into UI/UX and have experience in working with UI/UX Apps like Figma and sometimes even Photoshop. <br>
                     I also love Content-Creation, Video Editing and Production and Photography. <br>
-                    As a Computer Science student, I'm super interested in learning coding languages, right now I'm strengthening my Python Skills
+                    I' also into Blockchain, Web3, Smart Contract development technologies and I'm also learning the solidity language for building smart contracts.
+                    As a Computer Science student, I'm super interested in learning coding languages, right now I'm strengthening my Python a Skills and learning new languages.
                 </div>
             </div>
         </div>
@@ -72,17 +77,44 @@
                     <h5 class="skilltext">UI/UX Design</h3>
                 </div>
                 <div class="skilltype">
-                    <img src="images/cam.png" alt="">
+                    <img src="images/python.png" alt="">
                     <h5 class="skilltext">Python</h3>
                 </div>
+                <!-- <div class="skilltype">
+                    <img src="images/sol.png" alt="">
+                    <h5 class="skilltext">Solidity</h3>
+                </div> -->
             </div>
         </div>
 
-        <div class="socials">
-
+        <div class="socials" id="socialsme">
+            <h3>Socials</h3>
+            <div class="socialsbox">
+                <div class="socialtype">
+                    <img src="images/insta.png" alt="">
+                    <a href="https://www.instagram.com/_thegauthamkrishhna._/" target="/blank" class="skilltext1">Instagram</a>
+                </div>
+                <div class="socialtype">
+                    <img src="images/tweet.png" alt="">
+                    <a href="https://twitter.com/pointlessduhh" target="/blank" class="skilltext1">Twitter</a>
+                </div>
+                <div class="socialtype">
+                    <img src="images/git.png" alt="">
+                    <a href="https://github.com/gauthking" target="/blank" class="skilltext1" >GitHub</a>
+                </div>
+                <div class="socialtype">
+                    <img src="images/linkedin.png" alt="">
+                    <a href="https://www.linkedin.com/in/cp-gautham-krishna-580450227/" target="/blank" class="skilltext1">LinkedIn</a>
+                </div>
+            </div>
         </div>
-
+        <footer>
+            <div>Copyright  ©  CP Gautham Krishna</div>
+        </footer>
     </main>
+
+
+    <script src="hamburger.js"></script>
 
 </body>
 
