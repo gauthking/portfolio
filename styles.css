@@ -156,7 +156,6 @@ a:hover {
 .aboutbox {
   display: flex;
   justify-content: center;
-  align-items: center;
   box-sizing: border-box;
   height: 21rem;
   border-style: solid;
