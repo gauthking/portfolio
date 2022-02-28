@@ -156,8 +156,9 @@ a:hover {
 .aboutbox {
   display: flex;
   justify-content: center;
+  align-items: center;
   box-sizing: border-box;
-  height: 18rem;
+  height: 21rem;
   border-style: solid;
   border-width: 8px 6px;
   border-color: rgba(222, 184, 135, 0.555) rgb(113, 156, 192, 0.8);
