@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: rgb(182, 187, 154);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(55, 77, 177);
+  border-radius: 4px;
+}
+
+.navbar {
+  background-color: rgb(32, 31, 31);
+  border-bottom: solid 10px rgb(87, 83, 83, 0.3);
+  display: flex;
+  justify-content: space-between;
+}
+
+.normalmenu {
+  overflow: auto;
+}
+
+.normalmenu li {
+  float: left;
+  list-style: none;
+  margin: 23px 10px;
+  padding-right: 80px;
+}
+
+.navbar li a {
+  text-decoration: none;
+  color: blanchedalmond;
+  font-family: "Outfit", sans-serif;
+  font-size: 20px;
+}
+
+a:hover {
+  color: cornsilk;
+  background-color: darkgray;
+  border-radius: 5px;
+  padding: 3px;
+}
+
+/* hamburger menu */
+@media (min-width: 700px) {
+  .navbar i {
+    display: none;
+  }
+}
+
+@media (max-width: 699px) {
+  .normalmenu li {
+    display: none;
+  }
+
+  .navbar i {
+    display: block;
+    color: white;
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    cursor: pointer;
+  }
+  .hamburgermenu {
+    display: flex;
+    flex-direction: column;
+    margin: 65px auto 15px auto;
+    list-style: none;
+    gap: 1.2rem;
+  }
+  .hamburgermenu li a {
+    text-decoration: none;
+    color: blanchedalmond;
+    font-family: "Outfit", sans-serif;
+    font-size: 30px;
+  }
+}
+
+.port {
+  justify-self: flex-end;
+  margin: 1rem 2rem;
+  color: blanchedalmond;
+  font-family: "Roboto", sans-serif;
+  font-size: 30px;
+}
+
+.projects {
+  margin: 0;
+  height: 100vh;
+  background-image: linear-gradient(to right top, #051937, #004d7a);
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.projects h3 {
+  font-family: "Outfit", sans-serif;
+  font-size: 50px;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 7rem;
+  color: rgba(255, 255, 255, 0.8);
+  filter: drop-shadow(0 0 0.25rem rgb(201, 226, 57));
+  cursor: default;
+}
+
+.projectbox{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#python{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 4px solid rgba(183, 189, 150, 0.815);
+}
+
+#webdev{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 4px solid rgba(183, 189, 150, 0.815);
+}
+
+#other{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 4px solid rgba(183, 189, 150, 0.815);
+}
