@@ -49,7 +49,6 @@ a:hover {
   color: cornsilk;
   background-color: darkgray;
   border-radius: 5px;
-
 }
 
 /* hamburger menu */
@@ -98,11 +97,13 @@ a:hover {
   /* border-bottom: 20px solid rgba(255, 255, 255, 0.315); */
 }
 
+#particles-js{
+  height: 90vh;
+}
+
 .myname {
   padding: 10px;
   border: 6px solid whitesmoke;
-
-  margin: auto 12px;
   font-family: "Outfit", sans-serif;
   font-size: 50px;
   text-transform: uppercase;
@@ -111,10 +112,11 @@ a:hover {
   filter: drop-shadow(0 0 0.25rem rgb(113, 156, 192));
   letter-spacing: 2px;
   cursor: default;
+  position: absolute;
 }
 
 .quote {
-  position: relative;
+  position: absolute;
   bottom: 200px;
   color: rgba(240, 248, 255, 0.74);
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
@@ -124,12 +126,16 @@ a:hover {
   letter-spacing: 3px;
 }
 
+.quotepostioned{
+  top: 50rem;
+}
+
 @media (max-width: 376px) {
   .quote {
-    position: relative;
     bottom: 150px;
   }
 }
+
 .port {
   justify-self: flex-end;
   margin: 1rem 2rem;
@@ -165,7 +171,7 @@ a:hover {
   border-style: solid;
   border-width: 8px 6px;
   border-color: rgba(222, 184, 135, 0.555) rgb(113, 156, 192, 0.8);
-  margin: 15px auto 250px;
+  margin: 15px auto 100px;
   width: 80%;
   -webkit-box-shadow: 0px 2px 25px 1px rgb(149, 218, 195, 0.33);
   overflow-y: scroll;
@@ -212,9 +218,10 @@ a:hover {
   align-items: center;
 }
 
-.skillsbox img {
+.skillimg{
   -webkit-filter: drop-shadow(0 0 0.25rem rgb(201, 226, 57));
   width: 9rem;
+  margin-bottom: 2px;
 }
 
 .skilltype {
@@ -224,27 +231,26 @@ a:hover {
   flex-wrap: wrap;
   margin: auto;
   padding: 4px;
-  gap: 1rem;
-  height: 35rem;
+  height: 38rem;
 }
 
-.skilltype:hover .skillimg {
+/* .skilltype:hover .skillimg {
   background-color: rgba(117, 164, 206, 0.055);
   border-radius: 5px;
+} */
 
-}
 /* hover dropdown for skills */
 .dropdowns {
   display: block;
   position: relative;
-  padding: 4px;
+  padding: 8px;
+  margin: auto;
   font-family: "JetBrains Mono", monospace;
   border-radius: 6px;
-  top: 20px;
-  background-color: #d8c6af71;
+  background-color: #80aac571;
   width: 230px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  border: 3px solid rgb(180, 174, 118);
+  border: 3px solid rgba(180, 174, 118, 0.568);
   /* z-index: 1; */
   opacity: 0;
   transform: translateY(-20px);
@@ -254,7 +260,10 @@ a:hover {
 .skilltype:hover .dropdowns {
   opacity: 1;
   transform: translateY(0);
+}
 
+.skilltype:hover {
+  box-shadow: 0px -4px 16px 0px rgba(0, 0, 0, 0.2);;
 }
 
 .skilltext {

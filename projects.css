@@ -42,13 +42,13 @@ body::-webkit-scrollbar-thumb {
   color: blanchedalmond;
   font-family: "Outfit", sans-serif;
   font-size: 20px;
+  padding: 4px;
 }
 
 a:hover {
   color: cornsilk;
   background-color: darkgray;
   border-radius: 5px;
-  padding: 3px;
 }
 
 /* hamburger menu */
