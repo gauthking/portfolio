@@ -127,7 +127,7 @@ a:hover {
 
 .quote {
   position: absolute;
-  bottom: 200px;
+  bottom: 100px;
   color: rgba(240, 248, 255, 0.74);
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
