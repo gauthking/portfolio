@@ -1,6 +1,5 @@
 * {
   margin: 0;
-  padding: 0;
 }
 
 html,
@@ -242,7 +241,6 @@ a:hover {
   flex-wrap: wrap;
   margin: auto;
   padding: 4px;
-  height: 40rem;
 }
 
 /* .skilltype:hover .skillimg {
@@ -254,19 +252,35 @@ a:hover {
 .dropdowns {
   display: block;
   position: relative;
-  padding: 8px;
+  padding: 10px;
+  height: 20rem;
   margin: auto;
   font-family: "JetBrains Mono", monospace;
   border-radius: 6px;
   background-color: #80aac571;
-  width: 230px;
+  width: 240px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   border: 3px solid rgba(180, 174, 118, 0.568);
+  overflow-y: scroll;
   /* z-index: 1; */
   opacity: 0;
   transform: translateY(-20px);
   transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
 }
+
+.dropdowns::-webkit-scrollbar {
+  width: 4px;
+}
+
+.dropdowns::-webkit-scrollbar-track {
+  background-color: rgba(182, 187, 154, 0.466);
+}
+
+.dropdowns::-webkit-scrollbar-thumb {
+  background-color: rgb(55, 77, 177);
+  border-radius: 2px;
+}
+
 
 .skilltype:hover .dropdowns {
   opacity: 1;
