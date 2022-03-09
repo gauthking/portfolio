@@ -140,11 +140,11 @@ a:hover {
   top: 50rem;
 }
 
-@media (max-width: 376px) {
+/* @media (max-width: 376px) {
   .quote {
-    bottom: 150px;
+    
   }
-}
+} */
 
 .port {
   justify-self: flex-end;
