@@ -114,6 +114,7 @@ a:hover {
 .myname {
   padding: 10px;
   border: 6px solid whitesmoke;
+  margin: 0px 8px;
   font-family: "Outfit", sans-serif;
   font-size: 50px;
   text-transform: uppercase;
