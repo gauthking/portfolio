@@ -96,7 +96,7 @@ a:hover {
 
 .projects {
   margin: 0;
-  height: 100vh;
+  height: fit-content;
   background-image: linear-gradient(to right top, #051937, #004d7a);
   display: flex;
   flex-direction: column;
@@ -114,30 +114,79 @@ a:hover {
   cursor: default;
 }
 
-.projectbox{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
+.projectbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  flex-wrap: wrap;
 }
 
-#python{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 4px solid rgba(183, 189, 150, 0.815);
+.items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-style: solid;
+  border-width: 8px 8.5px;
+  border-color: rgba(222, 184, 135, 0.301) rgba(113, 157, 192, 0.493);
+  -webkit-box-shadow: 0px 2px 25px 1px rgba(149, 218, 195, 0.144);
+  max-width: 40rem;
+  max-height: 20rem;
+  overflow-y: scroll;
+  margin: 10px;
+  background-color: #3784b175;
 }
 
-#webdev{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 4px solid rgba(183, 189, 150, 0.815);
+.items::-webkit-scrollbar {
+  width: 4px;
 }
 
-#other{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 4px solid rgba(183, 189, 150, 0.815);
+.items::-webkit-scrollbar-track {
+  background-color: rgba(182, 187, 154, 0.466);
+}
+
+.items::-webkit-scrollbar-thumb {
+  background-color: rgb(55, 77, 177);
+  border-radius: 2px;
+}
+
+.items > h4 {
+  font-family: "JetBrains Mono", monospace;
+  color: rgba(255, 247, 247, 0.8);
+  filter: drop-shadow(0 0 0.25rem rgba(201, 226, 57, 0.308));
+  padding: 4px;
+  margin: 4px;
+}
+.pypr, .webdev {
+  display: flex;
+  flex-direction: column;
+  margin: 9px 10px;
+  padding: 5px;
+
+}
+
+.pypr:hover{
+  box-shadow: 0px -4px 10px 0px rgba(0, 0, 0, 0.473);
+}
+
+.webdev:hover{
+  box-shadow: 0px -4px 10px 0px rgba(0, 0, 0, 0.473);
+}
+
+.pypr > h4, .webdev > h4 {
+  color: rgb(22, 24, 24);
+  font-family: "JetBrains Mono", monospace;
+
+}
+
+.pypr > a, .webdev > a{
+  padding: 3px;
+  margin: 3px;
+  width: fit-content;
+  background-color: rgba(240, 255, 255, 0.322);
+  text-decoration: none;
+  font-family: "JetBrains Mono", monospace;
+  border-radius: 10px;
+  color: rgb(0, 60, 112);
 }
