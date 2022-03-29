@@ -158,31 +158,32 @@ a:hover {
   padding: 4px;
   margin: 4px;
 }
-.pypr, .webdev {
+.pypr,
+.webdev, .JScript {
   display: flex;
   flex-direction: column;
   margin: 9px 10px;
   padding: 5px;
-
 }
 
-.pypr:hover{
+.pypr:hover, .webdev:hover, .JScript:hover {
   box-shadow: 0px -4px 10px 0px rgba(0, 0, 0, 0.473);
 }
 
-.webdev:hover{
-  box-shadow: 0px -4px 10px 0px rgba(0, 0, 0, 0.473);
-}
 
-.pypr > h4, .webdev > h4 {
+.pypr > h4,
+.webdev > h4, .JScript > h4 {
   color: rgb(22, 24, 24);
   font-family: "JetBrains Mono", monospace;
-
 }
 
-.pypr > a, .webdev > a{
+.links {
+  display: flex;
+}
+
+.links > a {
   padding: 3px;
-  margin: 3px;
+  margin: 10px;
   width: fit-content;
   background-color: rgba(240, 255, 255, 0.322);
   text-decoration: none;
