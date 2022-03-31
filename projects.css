@@ -159,20 +159,26 @@ a:hover {
   margin: 4px;
 }
 .pypr,
-.webdev, .JScript {
+.webdev,
+.JScript,
+.block {
   display: flex;
   flex-direction: column;
   margin: 9px 10px;
   padding: 5px;
 }
 
-.pypr:hover, .webdev:hover, .JScript:hover {
+.pypr:hover,
+.webdev:hover,
+.JScript:hover,
+.block:hover {
   box-shadow: 0px -4px 10px 0px rgba(0, 0, 0, 0.473);
 }
 
-
 .pypr > h4,
-.webdev > h4, .JScript > h4 {
+.webdev > h4,
+.JScript > h4,
+.block > h4 {
   color: rgb(22, 24, 24);
   font-family: "JetBrains Mono", monospace;
 }
