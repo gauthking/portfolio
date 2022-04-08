@@ -62,13 +62,13 @@ a:hover {
 }
 
 /* hamburger menu */
-@media (min-width: 700px) {
+@media (min-width: 904px) {
   .navbar i {
     display: none;
   }
 }
 
-@media (max-width: 699px) {
+@media (max-width: 903px) {
   .normalmenu li {
     display: none;
   }
