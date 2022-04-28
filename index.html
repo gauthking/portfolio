@@ -23,6 +23,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script
       src="https://kit.fontawesome.com/99ba3fdd15.js"
       crossorigin="anonymous"
@@ -44,15 +45,19 @@
       </nav>
 
       <div class="hero" id="particles-js">
-        <h2 class="myname">Gautham Krishna</h2>
-        <div class="quote" id="quoteid">"Destiny got big plans for you"</div>
+        <h2 class="myname" data-aos="zoom-in" data-aos-duration="600">
+          Gautham Krishna
+        </h2>
+        <div class="quote" id="quoteid" data-aos="fade-down">
+          "Destiny got big plans for you"
+        </div>
       </div>
     </header>
 
     <main>
       <div class="ABOUT" id="aboutme">
-        <h3>About Me</h3>
-        <div class="aboutbox">
+        <h3 data-aos="zoom-in" data-aos-duration="600">About Me</h3>
+        <div class="aboutbox" data-aos="zoom-in-left" data-aos-duration="800">
           <div>
             Hello. I'm Gautham Krishhna and I am a first year undergrad studying
             at VIT University. I love to code and I'm super passionate about web
@@ -63,18 +68,20 @@
             I also love Content-Creation, Video Editing, Filmmaking and
             Photography. <br />
             And yeah, I'm into Blockchain, Web3, Smart Contract development
-            technologies which is a "hot cake" nowadays. Currenly exploring and learning about Ethereum Ecosystem and Solidity language for building smart contracts. <br/>
-            As a Computer Science student, I'm super interested
-            in learning coding languages, right now I'm strengthening my Python
-            Skills and learning new languages.
+            technologies which is a "hot cake" nowadays. Currenly exploring and
+            learning about Ethereum Ecosystem and Solidity language for building
+            smart contracts. <br />
+            As a Computer Science student, I'm super interested in learning
+            coding languages, right now I'm strengthening my Python Skills and
+            learning new languages.
           </div>
         </div>
       </div>
 
       <div class="skills" id="skillsme">
-        <h3>Skills</h3>
-        <div class="skillsbox">
-          <div class="skilltype">
+        <h3 data-aos="zoom-in" data-aos-duration="600">Skills</h3>
+        <div class="skillsbox" data-aos="fade-up">
+          <div class="skilltype" data-aos="fade-up" data-aos-duration="500">
             <img src="images/cam.png" class="skillimg" alt="" />
             <h5 class="skilltext">
               Photography& <br />
@@ -91,7 +98,7 @@
               </p>
             </div>
           </div>
-          <div class="skilltype">
+          <div class="skilltype" data-aos="fade-up" data-aos-duration="500">
             <img src="images/webdev.png" class="skillimg" alt="" />
             <h5 class="skilltext">Web-Dev</h5>
             <div class="dropdowns" id="dropdown2">
@@ -106,7 +113,7 @@
               </p>
             </div>
           </div>
-          <div class="skilltype">
+          <div class="skilltype" data-aos="fade-up" data-aos-duration="500">
             <img src="images/UIUX.png" class="skillimg" alt="" />
             <h5 class="skilltext">UI/UX Design</h5>
             <div class="dropdowns" id="dropdown2">
@@ -119,7 +126,7 @@
               </p>
             </div>
           </div>
-          <div class="skilltype">
+          <div class="skilltype" data-aos="fade-up" data-aos-duration="500">
             <img src="images/python.png" class="skillimg" alt="" />
             <h5 class="skilltext">Python</h5>
             <div class="dropdowns" id="dropdown2">
@@ -165,9 +172,9 @@
       </div>
 
       <div class="socials" id="socialsme">
-        <h3>Socials</h3>
-        <div class="socialsbox">
-          <div class="socialtype">
+        <h3 data-aos="zoom-in-right">Socials</h3>
+        <div class="socialsbox" data-aos="zoom-in">
+          <div class="socialtype" data-aos="fade-up" data-aos-duration="500">
             <img src="images/insta.png" alt="" />
             <a
               href="https://www.instagram.com/_thegauthamkrishhna._/"
@@ -176,7 +183,7 @@
               >Instagram</a
             >
           </div>
-          <div class="socialtype">
+          <div class="socialtype" data-aos="fade-up" data-aos-duration="500">
             <img src="images/tweet.png" alt="" />
             <a
               href="https://twitter.com/pointlessduhh"
@@ -185,7 +192,7 @@
               >Twitter</a
             >
           </div>
-          <div class="socialtype">
+          <div class="socialtype" data-aos="fade-up" data-aos-duration="500">
             <img src="images/git.png" alt="" />
             <a
               href="https://github.com/gauthking"
@@ -194,13 +201,22 @@
               >GitHub</a
             >
           </div>
-          <div class="socialtype">
+          <div class="socialtype" data-aos="fade-up" data-aos-duration="500">
             <img src="images/linkedin.png" alt="" />
             <a
               href="https://www.linkedin.com/in/cp-gautham-krishna-580450227/"
               target="/blank"
               class="skilltext1"
               >LinkedIn</a
+            >
+          </div>
+          <div class="socialtype" data-aos="fade-up" data-aos-duration="500">
+            <img src="images/hack.png" alt="" />
+            <a
+              href="https://www.hackerrank.com/GAUTHAM1234"
+              target="/blank"
+              class="skilltext1"
+              >Hackerrank</a
             >
           </div>
         </div>
@@ -214,5 +230,9 @@
     <script src="particles.js"></script>
     <script src="particles.min.js"></script>
     <script src="app.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

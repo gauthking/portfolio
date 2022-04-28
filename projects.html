@@ -23,6 +23,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="projects.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script
       src="https://kit.fontawesome.com/99ba3fdd15.js"
       crossorigin="anonymous"
@@ -43,10 +44,10 @@
       </nav>
     </header>
     <section class="projects">
-      <h3>PROJECTS</h3>
+      <h3 data-aos="fade-up-right" data-aos-duration="600">PROJECTS</h3>
 
       <div class="projectbox">
-        <div class="items">
+        <div class="items" data-aos="zoom-in">
           <h4>Python</h4>
           <div class="pypr">
             <h4>Duplicate File Cleaner</h4>
@@ -66,7 +67,12 @@
           <div class="pypr">
             <h4>Simple Voice Assistant</h4>
             <div>
-              One of my recent Python projects. I used pyttsx3 and speech recognition modules and some other libraries for this project. You can initialize the program by first changing your name in the code, then run the program and then call "Ruby" to initialize the voice assistant. More information is available in repository readme.md file.
+              One of my recent Python projects. I used pyttsx3 and speech
+              recognition modules and some other libraries for this project. You
+              can initialize the program by first changing your name in the
+              code, then run the program and then call "Ruby" to initialize the
+              voice assistant. More information is available in repository
+              readme.md file.
             </div>
             <div class="links">
               <a
@@ -108,7 +114,7 @@
             </div>
           </div>
         </div>
-        <div class="items">
+        <div class="items" data-aos="zoom-in">
           <h4>Web-Dev</h4>
           <div class="webdev">
             <h4>Go-Chef Webpage</h4>
@@ -148,10 +154,14 @@
               Made using TailwindCSS and this webpage is a part of my
               TailwindCSS Course. The website is responsive on all devices and
               is hosted temporarily on netlify app. More developments to be
-              added soon. Most site features are still static since I focussed more on the styling part, it has little bit of JS too. You can get the source code and view the page using the links below.
+              added soon. Most site features are still static since I focussed
+              more on the styling part, it has little bit of JS too. You can get
+              the source code and view the page using the links below.
             </div>
             <div class="links">
-              <a href="https://github.com/gauthking/microsoft-clone-tailwind">GitHub</a>
+              <a href="https://github.com/gauthking/microsoft-clone-tailwind"
+                >GitHub</a
+              >
               <a href="https://microsoftclonegauthking.netlify.app/">Live</a>
             </div>
           </div>
@@ -169,7 +179,7 @@
             </div>
           </div>
         </div>
-        <div class="items">
+        <div class="items" data-aos="zoom-in">
           <h4>JavaScript</h4>
           <div class="JScript">
             <h4>Rock Paper Scissor</h4>
@@ -194,7 +204,7 @@
             </div>
           </div>
         </div>
-        <div class="items">
+        <div class="items" data-aos="zoom-in">
           <h4>Blockchain/NFTs/Web3</h4>
           <div class="block">
             <h4>MicropuppiesNFT - First OpenSea NFT Project</h4>
@@ -225,5 +235,9 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
