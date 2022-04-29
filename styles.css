@@ -55,7 +55,7 @@ body::-webkit-scrollbar-thumb {
   padding: 4px;
 }
 
-a:hover {
+.normalmenu > a:hover {
   color: cornsilk;
   background-color: darkgray;
   border-radius: 5px;
@@ -150,6 +150,10 @@ a:hover {
 .port {
   justify-self: flex-end;
   margin: 1rem 2rem;
+}
+
+.port > a {
+  text-decoration: none;
   color: blanchedalmond;
   font-family: "Roboto", sans-serif;
   font-size: 30px;
